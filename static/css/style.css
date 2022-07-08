@@ -297,21 +297,15 @@ button {
 	}
 
 	.services__href {
-		display: block;
-		padding-right: 0px;
+		display: flex;
+		align-items: center;
 		margin-right: 60px;
-		font-family: 'TT Lakes';
 		color: #1B1C21;
-		font-size: 16px;
-		line-height: 24px;
-
 	}
 
 	.services__repair,
 	.services__checkstatus {
-		margin-top: 20px;
-		padding: 5px 5px;
-		background-position: 143px 0px;
+		margin-left: 16px;	
 	}
 
 }
