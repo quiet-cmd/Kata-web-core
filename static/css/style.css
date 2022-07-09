@@ -62,7 +62,7 @@ a {
 	color: #7E7E82;
 }
 
-button {
+.button {
 	display: flex;
 	align-items: center;
 
@@ -83,29 +83,6 @@ button {
     flex-direction: column;
     max-width: 1120px;
     margin: auto;
-}
-
-/*
-._container {
-    max-width: 1123px;
-    padding: 0px 15px;
-    margin: 0px auto;
-    box-sizing: content-box;
-}
-*/
-
-
-/* btn */
-.read-button {
-	margin: 16px 0px;
-}
-
-
-.read-button__img {
-	margin-right: 16px;
-	min-width: 24px;
-	min-height: 24px;
-	background: url("../img/expand.svg") no-repeat;
 }
 
 /*ico */
@@ -178,7 +155,7 @@ button {
 
 
 @media (max-width: 767px) {
-	.header ._lap {
+	.header .header__device--tablet {
 		display: none;
 	}
 
@@ -259,15 +236,14 @@ button {
 	margin-bottom: 24px;
 }
 
-.services__item:hover,
-.services__item:focus {
+.services__item--active {
 	outline: 2px solid #B8FFEC;
 	border-radius: 6px;
 	background-color: white;
 }
 
 @media (max-width: 1119px) {
-	.services__href-list {
+	.services__device--deck {
 		display: none;
 	}
 }
@@ -331,16 +307,28 @@ button {
 	font-size: 1.1em;
 }
 
+.read-button {
+	margin: 16px 0px;
+}
+
+
+.read-button__img {
+	margin-right: 16px;
+	min-width: 24px;
+	min-height: 24px;
+	background: url("../img/expand.svg") no-repeat;
+}
+
 @media (max-width: 767px) {
-	.about__main-part ._lap,
-	.about__main-part ._deck {
+	.about__device--tablet,
+	.about__device--deck {
 		display: none;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 1119px)   {
-	.about__main-part ._phone,
-	.about__main-part ._deck {
+	.about__device--phone,
+	.about__device--deck {
 		display: none;
 	}
 
@@ -364,8 +352,8 @@ button {
 }
 
 @media (min-width: 1120px) {
-	.about__main-part ._phone,
-	.about__main-part ._lap {
+	.about__device--phone,
+	.about__device--tablet {
 		display: none;
 	}
 
