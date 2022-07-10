@@ -208,7 +208,7 @@ a {
 	}
 }
 
-/*services---------------------------------*/
+/*main-block services---------------------------------*/
 .services__container {
 	padding-left: 16px;
 	margin-right: 16px;
@@ -286,7 +286,7 @@ a {
 
 }
 
-/*about---------------------------------*/
+/*main-block about---------------------------------*/
 .about__container { 
 	margin: 24px 16px 0px 16px;
 }
