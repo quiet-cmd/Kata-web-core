@@ -68,10 +68,8 @@ a {
 
 	border: none;
 	background-color: #F8F8F8;
-
 	font-family: 'TT Lakes';
-	font-size: 16px;
-	font-weight: bold;
+
 	
 	cursor: pointer;
 }
@@ -308,6 +306,8 @@ a {
 }
 
 .read-button {
+	font-size: 16px;
+	font-weight: bold;
 	margin: 16px 0px;
 }
 
