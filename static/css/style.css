@@ -81,6 +81,8 @@ a {
     flex-direction: column;
     max-width: 1120px;
     margin: auto;
+    
+    position: relative;
 }
 
 .block-bottom-line {

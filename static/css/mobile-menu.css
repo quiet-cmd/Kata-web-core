@@ -133,7 +133,7 @@ a {
 
 /*mobile-menu* 1.4*/
 
-@keyframes rofl {
+@keyframes hue-infinity {
 	from {
 		filter: hue-rotate(0deg);
 	}
@@ -144,12 +144,11 @@ a {
 
 .mobile-menu__btn:focus,
 .mobile-menu__btn:hover {
-	animation: rofl 3s linear infinite;
+	animation: hue-infinity 3s linear infinite;
 }
 
 
 .mobile-menu__container {
-	position: fixed;
 	max-width: 320px;
 	max-height: 1024px;
 	box-sizing: border-box;
@@ -196,7 +195,6 @@ a {
 }
 
 .mobile-menu__bottom {
-	margin-top: auto;
 	flex-direction: column;
 }
 
@@ -204,6 +202,10 @@ a {
 .mobile-menu__lang-group {
 	display: flex;
 	flex-direction: row;
+}
+
+.mobile-menu__button-group {
+	margin-top: 244px;
 }
 
 .mobile-menu__lang:not(:last-child) {
