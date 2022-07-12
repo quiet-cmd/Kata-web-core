@@ -59,7 +59,7 @@ a {
 	font-size: 16px;
 	line-height: 24px;
 	text-decoration: none;
-	color: #7E7E82;
+	color: #1B1C21;
 }
 
 .button {
@@ -83,33 +83,63 @@ a {
     margin: auto;
 }
 
-/*ico */
-.ico-repair {
-	display: block;
-	min-width: 40px;
-	min-height: 40px;
-	background: url("../img/header-ico/repair.svg") no-repeat;
-}
-
-.ico-checkstatus {
-	display: block;
-	min-width: 40px;
-	min-height: 40px;
-	background: url("../img/header-ico/checkstatus.svg") no-repeat;
-
-}
-
 .block-bottom-line {
 	border-bottom: 1px solid #D9FFF5;
 }
 
 
+/*ico */
+.ico {
+	display: block;
+	min-width: 40px;
+	min-height: 40px;
+}
+
+.ico-repair {
+	background: url("../img/ico/repair.svg") no-repeat;
+}
+
+.ico-logo {
+	display: block;
+	min-width: 97px;
+	min-height: 51px;
+	background: url("../img/ico/logo.svg") no-repeat;
+}
+
+.ico-checkstatus {
+	background: url("../img/ico/checkstatus.svg") no-repeat;
+}
+
+.ico-burger {
+	background: url("../img/ico/burgerburger.svg") no-repeat;
+}
+
+.ico-call {
+	background: url("../img/ico/call.svg") no-repeat;
+}
+
+.ico-chat {
+	background: url("../img/ico/chat.svg") no-repeat;
+}
+
+.ico-profile {
+	background: url("../img/ico/profile.svg") no-repeat;
+}
+
+.ico-search {
+	background: url("../img/ico/search.svg") no-repeat;	
+}
+
+.ico-burger-active {
+	background: url("../img/ico/burger-active.svg") no-repeat;	
+}
+
 /*header---------------------------------*/
-.header {
+.mobile-upper-menu {
 	background-color: white;
 }
 
-.header__container {
+.mobile-upper-menu__container {
 	margin-left: 16px;
 
 	min-height: 88px;
@@ -117,106 +147,71 @@ a {
 	align-items: center;
 }
 
-.header__container > a {
+.mobile-upper-menu__container > a {
 	margin-right: 16px;
-	display: block;
-	min-width: 40px;
-	min-height: 40px;
 }
-
-.header__container .header__logo {
-	min-width: 97px;
-	min-height: 51px;
-	background: url("../img/header-ico/logo.svg") no-repeat;
-}
-
-.header__burger {
-	background: url("../img/header-ico/burgerburger.svg") no-repeat;
-}
-
-.header__logo {
-	background: url("../img/header-ico/logo.svg") no-repeat;
-}
-
-.header__call {
-	background: url("../img/header-ico/call.svg") no-repeat;
-}
-
-.header__chat {
-	background: url("../img/header-ico/chat.svg") no-repeat;
-}
-
-.header__profile {
-	background: url("../img/header-ico/profile.svg") no-repeat;
-}
-
-
 
 @media (max-width: 767px) {
-	.header .header__device--tablet {
+	.mobile-upper-menu .mobile-upper-menu__device--tablet {
 		display: none;
 	}
 
-	.header__container::before {
+	.mobile-upper-menu__container::before {
 		content: "";
 		width: 2px;
 		height: 32px;
-		background: url("../img/header-ico/divider.svg") no-repeat;
+		background: url("../img/divider.svg") no-repeat;
 		position: absolute;
 		left: 186px;
 	}
 
-	.header__container .header__logo {
+	.mobile-upper-menu__container .mobile-upper-menu__logo {
 		margin-right: 38px;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 1119px)  {
-	.header__call {
+	.mobile-upper-menu__call {
 		margin-left: auto;
 	}
 
-	.header__logo,
-	.header__repair {
+	.mobile-upper-menu__logo,
+	.mobile-upper-menu__repair {
 		margin-left: 42px;
 	}
 
-	.header__container::before {
+	.mobile-upper-menu__container::before {
 		content: "";
 		width: 2px;
 		height: 32px;
-		background: url("../img/header-ico/divider.svg") no-repeat;
+		background: url("../img/divider.svg") no-repeat;
 		position: absolute;
 		left: 84px;
 	}
 
-	.header__container::after {
+	.mobile-upper-menu__container::after {
 		content: "";
 		width: 2px;
 		height: 32px;
-		background: url("../img/header-ico/divider.svg") no-repeat;
+		background: url("../img/divider.svg") no-repeat;
 		position: absolute;
 		right: 140px;
 	}
 }
 
 @media (min-width: 1120px) {
-	.header {
+	.mobile-upper-menu {
 		display: none;
 	}
 }
 
-/*main-block services---------------------------------*/
-.services__container {
+/*main-block titles---------------------------------*/
+.titles__container {
 	padding-left: 16px;
 	margin-right: 16px;
-	display: flex;
-	flex-direction: column;
-
-	background: url("../img/highlight.png") no-repeat 0px 15px;
 }
 
-.services__menu {
+.titles__menu {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -226,7 +221,17 @@ a {
 	padding-top: 2px;
 }
 
-.services__item {
+.titles__title::before {
+	position: absolute;
+	content: "";
+	width: 50px;
+	height: 50px;
+	background: url("../img/highlight.png") no-repeat 0px 0px;
+	margin-left: -16px;
+	margin-top: -8px;
+}
+
+.titles__item {
 	padding: 8px;
 	white-space: nowrap;
 	font-size: 16px;
@@ -234,30 +239,30 @@ a {
 	margin-bottom: 24px;
 }
 
-.services__item--active {
+.titles__item--active {
 	outline: 2px solid #B8FFEC;
 	border-radius: 6px;
 	background-color: white;
 }
 
 @media (max-width: 1119px) {
-	.services__device--deck {
+	.titles__device--deck {
 		display: none;
 	}
 }
 
 @media (min-width: 1120px) {
-	.services__menu {
+	.titles__menu {
 		overflow-x: hidden;
 		flex-wrap: wrap;
 	}
 
 	
-	.services__container {
+	.titles__container {
 		margin-right: 16px;
 	}
 
-	.services__top-part {
+	.titles__top-part {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -265,20 +270,20 @@ a {
 
 	}
 
-	.services__href-list {
+	.titles__action-group {
 		display: flex;
 		margin-left: auto;
 	}
 
-	.services__href {
+	.titles__action {
 		display: flex;
 		align-items: center;
 		margin-right: 60px;
 		color: #1B1C21;
 	}
 
-	.services__repair,
-	.services__checkstatus {
+	.titles__repair,
+	.titles__checkstatus {
 		margin-left: 16px;	
 	}
 
@@ -302,7 +307,7 @@ a {
 .about__info {
 	width: auto;
 	margin-right: 20px;
-	font-size: 1.1em;
+	font-size: 1.2em;
 }
 
 .read-button {
@@ -327,7 +332,6 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 1119px)   {
-	.about__device--phone,
 	.about__device--deck {
 		display: none;
 	}
@@ -352,19 +356,13 @@ a {
 }
 
 @media (min-width: 1120px) {
-	.about__device--phone,
-	.about__device--tablet {
-		display: none;
-	}
-
 	.about__container {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
 	}
 
-	.about__info {
-		margin-right: 36px;
+	.about__info:last-child {
 		width: 490px;
 	}
 	.about__photo-logo {
@@ -372,3 +370,4 @@ a {
 		height: 383px;
 	}
 }
+

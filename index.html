@@ -9,54 +9,51 @@
 <body>
 	<div class="wrapper">
 		
-		<header class="header">
-			<nav class="header__container block-bottom-line">
-				<a href="" arial-label="burger" class="header__burger"></a>
-				<a href="" class="header__logo"></a>
-				<a href="" arial-label="call" class="header__call header__device--tablet"></a>
-				<a href="" arial-label="chat" class="header__chat header__device--tablet"></a>
-				<a href="" arial-label="profile" class="header__profile header__device--tablet"></a>
-				<a href="" arial-label="repair" class="header__repair ico-repair"></a>
-				<a href="" arial-label="checkstatus" class="header__checkstatus ico-checkstatus"></a>
+		<header class="mobile-upper-menu">
+			<nav class="mobile-upper-menu__container block-bottom-line">
+				<a href="" arial-label="burger" class="mobile-upper-menu__burger ico-burger ico"></a>
+				<a href="" class="mobile-upper-menu__logo ico-logo"></a>
+				<a href="" arial-label="call" class="mobile-upper-menu__call ico-call ico mobile-upper-menu__device--tablet"></a>
+				<a href="" arial-label="chat" class="mobile-upper-menu__chat ico-chat  ico mobile-upper-menu__device--tablet"></a>
+				<a href="" arial-label="profile" class="mobile-upper-menu__profile ico-profile ico  mobile-upper-menu__device--tablet"></a>
+				<a href="" arial-label="repair" class="mobile-upper-menu__repair ico ico-repair"></a>
+				<a href="" arial-label="checkstatus" class="mobile-upper-menu__checkstatus ico ico-checkstatus"></a>
 			</nav>
 		</header>
 
 		<main>
-			<section class="main-block">
-				<section class="services">
-					<div class="services__container">
-						<div class="services__top-part">
-							<h1 class="services__title">Услуги и сервисы</h1>
-							<div class="services__href-list services__device--deck">
-								<a href="" class="services__href">Оставить заявку<span class="services__repair ico-repair"></span></a>
-								<a href="" class="services__href">Статус ремонта<span class="services__checkstatus ico-checkstatus"></span></a>
+			<div class="main-block">
+				<div class="titles">
+					<div class="titles__container">
+						<div class="titles__top-part">
+							<h1 class="titles__title">Услуги и сервисы</h1>
+							<div class="titles__action-group titles__device--deck">
+								<a href="" class="titles__action">Оставить заявку<span class="titles__repair ico-repair ico"></span></a>
+								<a href="" class="titles__action">Статус ремонта<span class="titles__checkstatus ico-checkstatus ico"></span></a>
 							</div>
 						</div>
-						<nav class="services__menu">
-							<input type="button" class="services__item services__item--active button" value="Ремонтируемые бренды">
-							<input type="button" class="services__item button" value="Ремонтируемые устройства">
-							<input type="button" class="services__item button" value="Цены на услуги">
-							<input type="button" class="services__item button" value="Адреса сервисных центров">
-							<input type="button" class="services__item button" value="Специальные цены">
-							<input type="button" class="services__item button" value="Отзывы">
+						<nav class="titles__menu">
+							<input type="button" class="titles__item titles__item--active button" value="Ремонтируемые бренды">
+							<input type="button" class="titles__item button" value="Ремонтируемые устройства">
+							<input type="button" class="titles__item button" value="Цены на услуги">
+							<input type="button" class="titles__item button" value="Адреса сервисных центров">
+							<input type="button" class="titles__item button" value="Специальные цены">
+							<input type="button" class="titles__item button" value="Отзывы">
 						</nav>
 					</div>
-				</section>
+				</div>
 
-				<article class="about">
+				<div class="about">
 					<div class="about__container">
 
 						<div class="about__main-part">
-							<p class="about__info about__device--phone">
+							<p class="about__info">
 								Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
 							</p>
 							<p class="about__info about__device--tablet">
-								Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+								Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="about__device--deck">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
 							</p>
-							<p class="about__info about__device--deck">
-								Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-							</p>
-
+							
 							<button class="read-button button" type="button">
 								<span class="read-button__img"></span>
 									Читать далее
@@ -64,8 +61,8 @@
 						</div>
 						<img src="static/img/CPS.png" alt="фото с логотипом CPS" class="about__photo-logo">
 					</div>
-				</article>
-			</section>
+				</div>
+			</div>
 
 		</main>
 	</div>
