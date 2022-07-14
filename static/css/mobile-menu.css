@@ -144,7 +144,7 @@ a {
 
 .side-menu__btn:focus,
 .side-menu__btn:hover {
-	animation: hue-infinity 3s linear 1;
+	animation: hue-infinity 3s linear infinite;
 }
 
 
