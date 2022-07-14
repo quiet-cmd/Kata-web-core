@@ -132,19 +132,15 @@ a {
 
 
 /*mobile-menu* 1.4*/
-
-@keyframes hue-infinity {
-	from {
-		filter: hue-rotate(0deg);
-	}
-	to {
-		filter: hue-rotate(360deg);
-	}
+.side-menu__btn {
+	transition: all 0.75s linear;
+	filter: hue-rotate(0deg) opacity(1);
 }
 
 .side-menu__btn:focus,
 .side-menu__btn:hover {
-	animation: hue-infinity 3s linear infinite;
+	transition: all 0.5s linear;
+	filter: hue-rotate(150deg) opacity(0.75);
 }
 
 
