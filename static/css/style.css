@@ -65,12 +65,8 @@ a {
 .button {
 	display: flex;
 	align-items: center;
-
 	border: none;
-	background-color: #F8F8F8;
 	font-family: 'TT Lakes';
-
-	
 	cursor: pointer;
 }
 
@@ -81,7 +77,6 @@ a {
     flex-direction: column;
     max-width: 1120px;
     margin: auto;
-    
     position: relative;
 }
 
@@ -239,6 +234,7 @@ a {
 	font-size: 16px;
 	margin-right: 24px;
 	margin-bottom: 24px;
+	background-color: #F8F8F8;
 }
 
 .titles__item--active {
@@ -316,6 +312,7 @@ a {
 	font-size: 16px;
 	font-weight: bold;
 	margin: 16px 0px;
+	background-color: #F8F8F8;
 }
 
 
