@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Bold.eot');
+    src: local('../fonts/TTLakes/TT Lakes Bold'), local('TTLakes-Bold'),
+        url('../fonts/TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes/TTLakes-Bold.woff') format('woff'),
+        url('../fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Regular.eot');
+    src: local('../fonts/TT Lakes Regular'), local('TTLakes-Regular'),
+        url('../fonts/TTLakes/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes/TTLakes-Regular.woff') format('woff'),
+        url('../fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Medium.eot');
+    src: local('../fonts/TTLakes/TT Lakes Medium'), local('TTLakes-Medium'),
+        url('../fonts/TTLakes/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes/TTLakes-Medium.woff') format('woff'),
+        url('../fonts/TTLakes/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+	font-size: 14px;
+	font-family: 'TT Lakes';
+	font-weight: normal;
+	margin: 0; 
+    padding: 0; 
+    border: 0;
+    color: #1B1C21;
+    background-color: #F8F8F8;
+}
+
+div {
+	font-family: 'TT Lakes';
+	font-size: 14px;
+	line-height: 20px;
+}
+
+h1 {
+	font-family: 'TT Lakes';
+	font-weight: bold;
+	font-size: 28px;
+}
+
+h2 {
+	font-family: 'TT Lakes';
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	text-transform: uppercase;
+	color: #7E7E82;
+}
+
+a {
+	font-family: 'TT Lakes';
+	font-size: 16px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #1B1C21;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+
+	border: none;
+	background-color: #F8F8F8;
+	font-family: 'TT Lakes';
+
+	
+	cursor: pointer;
+}
+
+
+/*ico */
+.ico {
+	display: block;
+	min-width: 40px;
+	min-height: 40px;
+}
+
+.ico-go {
+	background: url("../img/ico/go.svg") no-repeat;
+}
+
+/*repair-block---------------------------------*/
+.repair {
+	border-top: 1px solid #D9FFF5;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    margin: auto;
+    
+    position: relative;
+}
+
+.repair__container {
+	margin: 16px 16px 34px 16px;
+}
+
+.brands__brand {
+	box-sizing: border-box;
+	padding: 20px 16px 20px 16px;
+
+	width: 240px;
+	max-width: 280px;
+	max-height: 72px;
+
+	background-color: #ffffff;
+	border: 1px solid #EAEAEA;
+	border-radius: 6px;
+
+	display: flex;
+	align-items: center;
+}
+
+.brands__logo {
+	margin-right: auto;
+}
+
+.swiper {
+  height: 120px;
+}
+
+.swiper .swiper-pagination {
+  bottom: 15px;
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background-color: #B5B6BC;
+}
+
+.show-all-btn {
+	font-size: 16px;
+	margin: 16px 0px;
+	background-color: #F8F8F8;
+}
+
+.show-all-btn__img {
+	margin-right: 16px;
+	min-width: 24px;
+	min-height: 24px;
+	background: url("../img/expand.svg") no-repeat;
+}
+
+@media (min-width: 768px) and (max-width: 1119px)   {
+	.repair__container { 
+		margin: 24px 24px 34px 24px;
+	}
+	.brands__container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.brands__brand {
+		flex-basis: calc(100% / 3 - 20px);
+		margin-right: 24px;
+		margin-bottom: 16px;
+	}
+
+	.brands__brand:nth-child(3n) {
+		margin-right: 0px;
+	}
+
+	.brands__brand:nth-child(6) ~ .brands__brand {
+		display: none;
+	}
+}
+
+@media (min-width: 1120px) {
+	.repair__container { 
+		margin: 24px 34px 34px 32px;
+	}
+	.brands__container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.brands__brand {
+		flex-basis: calc(100% / 4 - 40px);
+		margin-right: 30px;
+		margin-bottom: 16px;
+	}
+
+	.brands__brand:nth-child(4n) {
+		margin-right: 0px;
+	}
+
+	.brands__brand:nth-child(8) ~ .brands__brand {
+		display: none;
+	}
+}
+
+
+
+
