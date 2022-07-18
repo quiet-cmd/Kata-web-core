@@ -129,8 +129,8 @@ a {
 	filter: hue-rotate(150deg) opacity(0.75);
 }
 
-.side-menu__container {
-	max-width: 320px;
+.side-menu {
+	width: 320px;
 	max-height: 1024px;
 	box-sizing: border-box;
 	padding: 23px 24px 32px 24px;
