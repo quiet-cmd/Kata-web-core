@@ -100,16 +100,18 @@ a {
 	border-top: 1px solid #D9FFF5;
     min-height: 100%;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
     max-width: 1120px;
-    margin: auto;
-    
+    margin: auto;   
     position: relative;
 }
 
 .repair__container {
-	margin: 16px 16px 34px 16px;
+	padding: 16px 16px 34px 16px;
+}
+
+.brands {
+	margin-top: 32px;
+	margin-bottom: 24px;
 }
 
 .brands__brand {
@@ -118,6 +120,7 @@ a {
 
 	width: 240px;
 	max-width: 280px;
+	min-height: 72px;
 	max-height: 72px;
 
 	background-color: #ffffff;
@@ -132,15 +135,7 @@ a {
 	margin-right: auto;
 }
 
-.swiper {
-  height: 120px;
-}
-
-.swiper .swiper-pagination {
-  bottom: 15px;
-}
-
-.swiper .swiper-pagination-bullet {
+.brands .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
   background-color: #B5B6BC;
@@ -159,8 +154,14 @@ a {
 	background: url("../img/expand.svg") no-repeat;
 }
 
+@media (max-width: 767px) {
+	.show-all-btn {
+		display: none;
+	}
+}
+
 @media (min-width: 768px) and (max-width: 1119px)   {
-	.repair__container { 
+	.repair__container {
 		margin: 24px 24px 34px 24px;
 	}
 	.brands__container {
@@ -178,7 +179,8 @@ a {
 		margin-right: 0px;
 	}
 
-	.brands__brand:nth-child(6) ~ .brands__brand {
+	.brands__device--tablet ~ .brands__brand,
+	.swiper-pagination {
 		display: none;
 	}
 }
@@ -188,7 +190,6 @@ a {
 		margin: 24px 34px 34px 32px;
 	}
 	.brands__container {
-		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
@@ -202,11 +203,8 @@ a {
 		margin-right: 0px;
 	}
 
-	.brands__brand:nth-child(8) ~ .brands__brand {
+	.brands__device--deck ~ .brands__brand,
+	.swiper-pagination {
 		display: none;
 	}
 }
-
-
-
-
