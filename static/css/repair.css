@@ -83,6 +83,16 @@ a {
 	cursor: pointer;
 }
 
+.wrapper {
+	border-top: 1px solid #D9FFF5;
+    min-height: 100%;
+    overflow: hidden;
+    max-width: 1120px;
+    margin: auto;   
+    position: relative;
+
+}
+
 
 /*ico */
 .ico {
@@ -96,15 +106,6 @@ a {
 }
 
 /*repair-block---------------------------------*/
-.repair {
-	border-top: 1px solid #D9FFF5;
-    min-height: 100%;
-    overflow: hidden;
-    max-width: 1120px;
-    margin: auto;   
-    position: relative;
-}
-
 .repair__container {
 	padding: 16px 16px 34px 16px;
 }
@@ -147,12 +148,28 @@ a {
 	background-color: #F8F8F8;
 }
 
-.show-all-btn__img {
+.show-all-btn::before {
+	content: "";
 	margin-right: 16px;
 	min-width: 24px;
 	min-height: 24px;
 	background: url("../img/expand.svg") no-repeat;
+	transform: rotate(0deg);
 }
+
+.show-all-btn:not(.show-all-btn--active)::before {
+	transform: rotate(180deg);
+}
+
+.show-all-btn::after {
+	content: 'Показать все';
+}
+
+.show-all-btn:not(.show-all-btn--active)::after {
+	content: 'Скрыть';
+}
+
+
 
 @media (max-width: 767px) {
 	.show-all-btn {

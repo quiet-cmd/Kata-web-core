@@ -41,10 +41,9 @@ window.addEventListener('resize', function(event) {
 }, true);
 
 
-var btnShow = document.querySelector('.show-all-btn');
-var showText = btnShow.querySelector('.show-all-btn__text');
-var showImg = btnShow.querySelector('.show-all-btn__img');
-var allBrand = document.querySelectorAll('.brands__brand');
+const btnShow = document.querySelector('.show-all-btn');
+const allBrand = document.querySelectorAll('.brands__brand');
+let hideBtn;
 
 
 btnShow.addEventListener('click', function() {
@@ -53,23 +52,18 @@ btnShow.addEventListener('click', function() {
 	btnShow.classList.toggle('show-all-btn--active');
 
 	if(!btnSelectors.contains('show-all-btn--active')) {
-		showText.textContent = 'Скрыть';
-		showImg.style.transform = 'rotate(180deg)';
-		displayChanger(allBrand, 'flex');
+		return displayChanger(allBrand, 'flex');
 	}
-	else {
-		showText.textContent = 'Показать все';
-		showImg.style.transform = 'rotate(0deg)';
+	
+	let userWidth = window.innerWidth;
 
-		let userWidth = window.innerWidth;
-
-		if (768 <= userWidth & userWidth <= 1119) {
-			var hideBtn = document.querySelectorAll('.brands__device--tablet ~ .brands__brand');
-		} else {
-			var hideBtn = document.querySelectorAll('.brands__device--deck ~ .brands__brand');
-		}
-
-		displayChanger(hideBtn, 'none');
+	if (768 <= userWidth & userWidth <= 1119) {
+		hideBtn = document.querySelectorAll('.brands__device--tablet ~ .brands__brand');
+	} else {
+		hideBtn = document.querySelectorAll('.brands__device--deck ~ .brands__brand');
 	}
+
+	displayChanger(hideBtn, 'none');
+
 
 })
